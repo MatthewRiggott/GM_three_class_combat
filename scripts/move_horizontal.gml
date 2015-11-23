@@ -3,13 +3,13 @@
 repeat(ceil(abs(x_speed)))
 {
     //Check for walls
-    var wall = place_meeting(x + sign(x_speed ),y,obj_wall);
+    var wall = place_meeting(x + sign(x_speed ),y,obj_block);
     var shift = false;
  
     //Moving Up a Slope
     if (wall)
     {
-        if (!place_meeting(x + sign(x_speed), y - 1,obj_wall))
+        if (!place_meeting(x + sign(x_speed), y - 1,obj_block))
         {
                x += sign(x_speed);
                y -= 1;
@@ -24,7 +24,7 @@ repeat(ceil(abs(x_speed)))
     //Moving Down a Slope
     else
     {
-        if (!place_meeting(x + sign(x_speed ),y + 1,obj_wall) && place_meeting(x + sign(x_speed), y + 2,obj_wall))
+        if (!place_meeting(x + sign(x_speed ),y + 1,obj_block) && place_meeting(x + sign(x_speed), y + 2,obj_block))
         {
                x += sign(x_speed );
                y += 1;

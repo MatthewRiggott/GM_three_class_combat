@@ -7,11 +7,10 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprite>sprites\spr_player_placeholder</sprite>
-    <sprite>sprites\spr_wall</sprite>
-    <sprite>sprites\spr_ramp_left</sprite>
-    <sprite>sprites\spr_ramp_right</sprite>
-    <sprite>sprites\spr_goal</sprite>
-    <sprite>sprites\sprite5</sprite>
+    <sprite>sprites\sp_iron_block</sprite>
+    <sprite>sprites\sp_archer</sprite>
+    <sprite>sprites\sp_wizard</sprite>
+    <sprite>sprites\sp_warrior</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -25,12 +24,11 @@
   <objects name="objects">
     <object>objects\obj_player</object>
     <object>objects\obj_block</object>
-    <object>objects\obj_ramp_left</object>
-    <object>objects\obj_ramp_right</object>
-    <object>objects\obj_goal</object>
+    <object>objects\obj_player1</object>
+    <object>objects\obj_iron_block</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\room0</room>
+    <room>rooms\rm_final_destination</room>
   </rooms>
   <constants number="2">
     <constant name="dir_left">-1</constant>
