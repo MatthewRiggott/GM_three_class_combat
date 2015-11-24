@@ -583,15 +583,19 @@ if cur_state != next_state {
             }else{
                 image_speed = ((x_speed * .6) / run_max_speed);
             }
+            break;
         case state.jump_up:
             image_speed = 0;
             image_index = 3;
+            break;
         case state.jump_moving:
             image_speed = 0;
             image_index = 3;
+            break;
         case state.falling:
             image_speed = 0;
             image_index = 3;
+            break;
     }
 }
 if facing==dir_right then image_xscale =-1;
